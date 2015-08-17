@@ -1,0 +1,9 @@
+C:\Users\gaming-pc\Documents\Visual Studio 2015\Projects\MsgEditorRebuild\Xenoverse-Msg-File-Editor\MsgEditorRebuild\bin\Release\MsgEditorRebuild.exe.config
+C:\Users\gaming-pc\Documents\Visual Studio 2015\Projects\MsgEditorRebuild\Xenoverse-Msg-File-Editor\MsgEditorRebuild\bin\Release\MsgEditorRebuild.exe
+C:\Users\gaming-pc\Documents\Visual Studio 2015\Projects\MsgEditorRebuild\Xenoverse-Msg-File-Editor\MsgEditorRebuild\bin\Release\MsgEditorRebuild.pdb
+C:\Users\gaming-pc\Documents\Visual Studio 2015\Projects\MsgEditorRebuild\Xenoverse-Msg-File-Editor\MsgEditorRebuild\obj\Release\MsgEditorRebuild.csprojResolveAssemblyReference.cache
+C:\Users\gaming-pc\Documents\Visual Studio 2015\Projects\MsgEditorRebuild\Xenoverse-Msg-File-Editor\MsgEditorRebuild\obj\Release\MsgEditorRebuild.Form1.resources
+C:\Users\gaming-pc\Documents\Visual Studio 2015\Projects\MsgEditorRebuild\Xenoverse-Msg-File-Editor\MsgEditorRebuild\obj\Release\MsgEditorRebuild.Properties.Resources.resources
+C:\Users\gaming-pc\Documents\Visual Studio 2015\Projects\MsgEditorRebuild\Xenoverse-Msg-File-Editor\MsgEditorRebuild\obj\Release\MsgEditorRebuild.csproj.GenerateResource.Cache
+C:\Users\gaming-pc\Documents\Visual Studio 2015\Projects\MsgEditorRebuild\Xenoverse-Msg-File-Editor\MsgEditorRebuild\obj\Release\MsgEditorRebuild.exe
+C:\Users\gaming-pc\Documents\Visual Studio 2015\Projects\MsgEditorRebuild\Xenoverse-Msg-File-Editor\MsgEditorRebuild\obj\Release\MsgEditorRebuild.pdb

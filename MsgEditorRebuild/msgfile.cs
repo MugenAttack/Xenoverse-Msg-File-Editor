@@ -233,7 +233,7 @@ namespace Msgfile
                                    0x00, 0x00, 0x00, 0x00,
                                    0x00, 0x00, 0x00, 0x00 };
             Applybyte(ref AddressInfo, BitConverter.GetBytes(bCount + text.Count), 0, 4); //address of text
-            Applybyte(ref AddressInfo, BitConverter.GetBytes(Line.Length - 1), 4, 4);
+            Applybyte(ref AddressInfo, BitConverter.GetBytes(Line.Length), 4, 4);
             Applybyte(ref AddressInfo, BitConverter.GetBytes(charArray.Length), 8, 4);
 
             text.AddRange(charArray);
