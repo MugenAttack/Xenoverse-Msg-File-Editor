@@ -74,11 +74,27 @@ namespace Msgfile
                 }
             }
 
+            for (int i = 0; i < file.data.Length; i++)
+            {
+                for (int j = 0; j < file.data[i].Lines.Length; j++)
+                {
+                    file.data[i].Lines[j] = file.data[i].Lines[j].Replace(@"&apos;", @"'");
+                }
+            }
+
             return file;
         }
 
         public static void Save(msg file,string FileName)
         {
+            for (int i = 0; i < file.data.Length; i++)
+            {
+                for (int j = 0; j < file.data[i].Lines.Length; j++)
+                {
+                    file.data[i].Lines[j] = file.data[i].Lines[j].Replace(@"'", @"&apos;");
+                }
+            }
+
             //MessageBox.Show("setup");
             int byteCount = 0;
             int TopLength = 32;

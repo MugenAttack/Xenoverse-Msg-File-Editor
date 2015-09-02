@@ -34,6 +34,9 @@
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.msgToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.removeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label2 = new System.Windows.Forms.Label();
             this.LineBox = new System.Windows.Forms.ComboBox();
             this.txtLine = new System.Windows.Forms.TextBox();
@@ -41,6 +44,7 @@
             this.txtNameID = new System.Windows.Forms.TextBox();
             this.txtID = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +53,7 @@
             this.slctBox.FormattingEnabled = true;
             this.slctBox.Location = new System.Drawing.Point(93, 46);
             this.slctBox.Name = "slctBox";
-            this.slctBox.Size = new System.Drawing.Size(121, 21);
+            this.slctBox.Size = new System.Drawing.Size(169, 21);
             this.slctBox.TabIndex = 0;
             this.slctBox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -65,7 +69,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem});
+            this.fileToolStripMenuItem,
+            this.msgToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(412, 24);
@@ -94,6 +99,29 @@
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
+            // 
+            // msgToolStripMenuItem
+            // 
+            this.msgToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addToolStripMenuItem,
+            this.removeToolStripMenuItem});
+            this.msgToolStripMenuItem.Name = "msgToolStripMenuItem";
+            this.msgToolStripMenuItem.Size = new System.Drawing.Size(42, 20);
+            this.msgToolStripMenuItem.Text = "Msg";
+            // 
+            // addToolStripMenuItem
+            // 
+            this.addToolStripMenuItem.Name = "addToolStripMenuItem";
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.addToolStripMenuItem.Text = "Add";
+            this.addToolStripMenuItem.Click += new System.EventHandler(this.addToolStripMenuItem_Click);
+            // 
+            // removeToolStripMenuItem
+            // 
+            this.removeToolStripMenuItem.Name = "removeToolStripMenuItem";
+            this.removeToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.removeToolStripMenuItem.Text = "Remove";
+            this.removeToolStripMenuItem.Click += new System.EventHandler(this.removeToolStripMenuItem_Click);
             // 
             // label2
             // 
@@ -135,9 +163,9 @@
             // 
             this.txtNameID.Location = new System.Drawing.Point(84, 218);
             this.txtNameID.Name = "txtNameID";
-            this.txtNameID.ReadOnly = true;
             this.txtNameID.Size = new System.Drawing.Size(145, 20);
             this.txtNameID.TabIndex = 7;
+            this.txtNameID.TextChanged += new System.EventHandler(this.txtNameID_TextChanged);
             // 
             // txtID
             // 
@@ -156,11 +184,22 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "ID";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.Red;
+            this.label5.Location = new System.Drawing.Point(70, 252);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(261, 13);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Do not edit NameID unless you know what your doing";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(412, 255);
+            this.ClientSize = new System.Drawing.Size(412, 281);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtNameID);
@@ -173,7 +212,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Msg Editor Beta 5 by MugenAttack";
+            this.Text = "Msg Editor 1.1.0 by MugenAttack";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -196,6 +235,10 @@
         private System.Windows.Forms.TextBox txtNameID;
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ToolStripMenuItem msgToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem removeToolStripMenuItem;
+        private System.Windows.Forms.Label label5;
     }
 }
 
