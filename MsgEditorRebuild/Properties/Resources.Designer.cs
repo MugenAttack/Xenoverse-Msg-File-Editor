@@ -59,5 +59,15 @@ namespace MsgEditorRebuild.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dragonball_xenoverse_gameplay {
+            get {
+                object obj = ResourceManager.GetObject("dragonball_xenoverse_gameplay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

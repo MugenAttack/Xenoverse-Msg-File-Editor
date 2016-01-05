@@ -239,7 +239,8 @@ namespace Msgfile
                 charArray = new byte[Line.Length + 1];
                 for (int i = 0; i < Line.Length; i++)
                 {
-                    Applybyte(ref charArray, BitConverter.GetBytes(Line[i]), i * 2, 1);
+                    //Applybyte(ref charArray, BitConverter.GetBytes(Line[i]), i * 2, 1);
+                    charArray[i] = BitConverter.GetBytes(Line[i])[0];
                 }
                 charArray[charArray.Length - 1] = 0x00;
             }
