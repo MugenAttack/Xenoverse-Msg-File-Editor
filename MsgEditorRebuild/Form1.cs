@@ -31,7 +31,7 @@ namespace MsgEditorRebuild
 
 
             FileName = browseFile.FileName;
-            file = msgStream.Load(FileName);
+            file = msgStream.Load2(FileName);
 
             slctBox.Items.Clear();
             for (int i = 0; i < file.data.Length; i++)
